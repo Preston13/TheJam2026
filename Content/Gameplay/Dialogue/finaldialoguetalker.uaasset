@@ -1,0 +1,67 @@
+set "r" for Ruby
+set "n" for Narration
+set "e" for Em
+set "c" for Cecile
+
+"c" to "cdemonform"
+
+c: "We aren't really human. And Ash isn't even our age. She's my grand-aunt. Likes to take life from sympathetic saps from broken homes." 
+
+r: "So my goddamn fiance." 
+
+c: "Exactly. I know shoving her in front of a train would've killed any normal person, even if it was an accident… but not auntie Ashyln. She'll come back with a goddamn vengeance, and I had to make sure you could save yourself." 
+
+r: "So you did the groundhog loop." 
+
+c: "You got me." 
+
+r: "How did I not know this about you?" 
+
+c: "You can be a little self absorbed on a good day, and you've been going through it. But now that you've had a chance to kill your darlings and figure some shit out, I wanna ask you something."
+
+r: "What is it?" 
+
+c: "Between all of us, who seemed like they could be a vessel for Ash?" 
+
+n: "I wish I could call out the bluff here, but I don't think Cecile is actually bluffing. That really is the worst part."
+
+r: "If they're a vessel, once I pop this Ash once and for all, they'll be back to normal?"
+
+c: "I've got just the thing for that." 
+
+obtainweapon: FINALPARTYPOPPER
+
+c: "Right before midnight, use this to exorcise her. My mom will thank you later, by the way." 
+
+r: "Isn't your mom also a bitch?"
+
+c: "Yeah, but she'll give you money. Maybe enough for that condo down payment."
+
+r: "Say less." 
+ 
+c: "Okay, cool. I'm gonna bring us back to your party. And Ruby?"
+
+r: "Yeah?"
+
+c: "Happy birthday. Love ya." 
+
+r: "Love you back, asshole." 
+
+goto: "partybg" 
+
+n: "It's almost midnight. I know exactly what I have to do." 
+
+goto: "e" 
+
+r: "Oi, Em." 
+
+e: "Yes?"
+
+r: "You know, I was thinking. My mom didn't actually get fourteen consecutive life sentences. It was thirteen. The fourteenth was tossed on a technicality that you told me about."
+
+soundeffect: popperguncocking
+
+r: "Happy New Year, bitch. Give me my friend back."
+
+goto: "finalboss"
+
