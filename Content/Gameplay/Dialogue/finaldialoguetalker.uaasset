@@ -1,6 +1,6 @@
-set "r" to RUBY
-set "l" to LUCIEN
-set "n" to NARRATION
+set "r" for RUBY
+set "l" for LUCIEN
+set "n" for NARRATION
 set "e" for EM
 set "c" for CECILE
 set "cd" for CECILE'S TRUE FORM
