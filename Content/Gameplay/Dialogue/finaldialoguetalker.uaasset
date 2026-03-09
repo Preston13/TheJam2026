@@ -15,24 +15,25 @@ set "cd" for CECILE'S TRUE FORM
 |r: "I'm happy you chose me and I love you a lot. Just got a little sappy over it, that's all!"|																																							|r:"No I won't. I don't know how I didn't notice this sooner…"|																														|n: "I have told Ceclie about every UTI I've gotten since we were both twenty three, but there's no way I can disclose this now without sounding insane. We have to have moderation here."|			|r: "What is it?"|
 |l: "Is this about Ash?"|																																																									|e: "What do you mean by that?"| 																																					|c: "You're right."|																																												|c: "Between all of us, who seemed like they could be a vessel for Ash?"|
 |r: "Maybe?"| 																																																												|r: "Don't deflect on me now. Can you tell me why you're so glum?"|																													|c: "No shit. Or yes shit, in your case. Seriously though…what's the matter?"|																														|n: "I wish I could call out the bluff here, but I don't think Cecile is actually bluffing. That really is the worst part."|
-|set "choices" to:																																																											|e: "You really want this on your birthday?"|																																		|r: "Apparently Em got something from Ash in the mail."|																																			|r: "If they're a vessel, once I pop this Ash once and for all, they'll be back to normal?"|
-	→ Is Ash okay? (go to: "choice1" and "first choice select")																																																|r: "Yes! No better time than the present, right? Not like anyone's gonna die or anything from a little truth bomb."|																|c: "You mean my sorority mate Ash? The one who worked with Lucien?"|																																|c: "I've got just the thing for that."|
-	→ Are you okay? (go to: "choice2" and "first choice select")|																																															|e: "Fine, it's your funeral. You know someone named Ash?"|																															|r: "Yeah. Like. Ash and Luce were very close."|																																					|obtainweapon: FINALPARTYPOPPER|
-|if "choice1" select: 																																																										|r: "Yeah. Luce's colleague. They were really close and it got weird, so I talked to him. What's up?"|																				|c: "Homewrecker close?"|																																											|c: "Right before midnight, use this to exorcise her. My mom will thank you later, by the way."|
-r: "Is Ash okay?" 																																																											|e: "Well I got something in the mail from this "Ash." Came in this morning."|																										|r: "The house has been burnt after being torn down, at least from how Em put it when they told me about the pictures."|																			|r: "Isn't your mom also a bitch? Why would I care?"|
-l: "Ash is fine. She's great, actually, as far as I know. Got a new job, new partner who isn't a piece of shit, and a new place. I couldn't have helped her with this without your understanding, even when it was too close for comfort." 					|r: "Okay, can we not beat around the bush?"|																																		|c: "And did you see the pictures?"|																																								|c: "Yeah, but she'll give you money. Maybe enough for that condo down payment."|
-r: "I'm…happy to hear that. And I know I went too far when we argued about it. Thanks for sticking by me, babe."																																			|e: "It was a bunch of pictures. Of Lucien and Ash getting real close, and then of Ash…dead." |																						|r: "Well, I-"|																																														|r: "Say {i}less{/i}."|
-l: "Wouldn't dare to have it any other way."|																																																				|r: "Like a stroke? An STD? Oh wait, I should be accurate here, and STI? What's the big deal?"|																						|c: "Did. You. See. Them?"|																																											|c: "Okay, cool. I'm gonna bring us back to your party. And Ruby?"|
-|if "choice2" select:																																																										|e: "Ash was mangled up. Like, a lot. Couldn't really tell what happened but her body was in shambles. The pictures were gross, and the letter said you did it."|					|n: "This feels like more than tough love here. Something's off."|																																	|r: "Yeah Ceci?|
-r: "Are you okay?" 																																																											|r: "That's insane."|																																								|goto: "thirdchoiceselect"|																																											|c: "Happy birthday. Love ya."|
-l: "I'm good. Why would I not be?"																																																							|choiceselect→ "What was the time stamp?" ("choice1.1" and "secondchoiceselect") → "Why would they send that to you?" ("choice1.2" and "secondchoiceselect")|						|→ "I didn't. Did you want me to see them?" ("choice 1.3" and "thirdchoiceselect")→ Why are you so upset? You said…("choice 1.4" and "third choiceselect")|											|r: "Love you back, asshole."|
-r: "Because we've been through a lot recently? As individuals and as a couple. Besides, I know I was harsh when I first saw you with Ash. I feel bad about it."																								|if "choice 1.1" select:|																																							|IF "choice 1.3":|																																													|goto: "partybg"|
-l: "You had every right to feel how you feel. Ash sent me an email recently talking about her life and how well she's done for herself. She even thanked you. That made me feel better."																	|r: "What was the time stamp for the photos?"| 																																		|r: "I didn't. Did you want me to see them?"|																																						|n: "It's almost midnight. I know exactly what I have to do."|
-r: "Thanked me? For what?" 																																																									|e: "I told you I got them this morning."|																																			|c: "If you're gonna assume you're guilty of a crime, I'd assume you want to see the evidence from Em."|																							|goto: "e"|
-l: "How did she say it again? For giving her a new lease on life."||If "firstchoiceselect" is made: 																																						|r: "Yeah I heard that. But are there any indications about when those photos were taken?"|																							|n: "Well I tried to get rid of Em through the process of elimination and still ended up in this shit loop, so I think we're ok."|																	|r: "Oi, Em."|
-n: "It seems like I've got a lot to chew on, because the math isn't adding up."																																												|e: "I'm sorry, I was too grossed out by the literal dead body and CSI type pictures to pay attention. And you haven't said anything about them calling you the murderer."|			|r: "They were worried about me. Are you worried about me?"|																																		|e: "Yessssssss?"|
-n: "I saw that bitch die with my own two eyes, even if I technically wasn't the one that killed her. Is my own fiance lying to me? Again?"																													|r: "Well, it would run in the family then."|																																		|c: "Of course I am. And I'm worried about Ash, too. After what happened, she—" |																													|r: "You know, I was thinking. My mom didn't actually get fourteen consecutive life sentences. It was thirteen. The fourteenth was tossed on a technicality that you told me about."|
-n: "Oh this is {i}war{/i}."|																																																								|e: "Don't be gross."| 																																								|r: "What happened with her?"|																																										|soundeffect: popperguncocking|
+|set "choices" to:|																																																											|e: "You really want this on your birthday?"|																																		|r: "Apparently Em got something from Ash in the mail."|																																			|r: "If they're a vessel, once I pop this Ash once and for all, they'll be back to normal?"|
+	|→ Is Ash okay? (go to: "choice1" and "first choice select")|																																															|r: "Yes! No better time than the present, right? Not like anyone's gonna die or anything from a little truth bomb."|																|c: "You mean my sorority mate Ash? The one who worked with Lucien?"|																																|c: "I've got just the thing for that."|
+	|→ Are you okay? (go to: "choice2" and "first choice select")|																																															|e: "Fine, it's your funeral. You know someone named Ash?"|																															|r: "Yeah. Like. Ash and Luce were very close."|																																					|obtainweapon: FINALPARTYPOPPER|
+|if "choice1" select:| 																																																										|r: "Yeah. Luce's colleague. They were really close and it got weird, so I talked to him. What's up?"|																				|c: "Homewrecker close?"|																																											|c: "Right before midnight, use this to exorcise her. My mom will thank you later, by the way."|
+|r: "Is Ash okay?"| 																																																										|e: "Well I got something in the mail from this "Ash." Came in this morning."|																										|r: "The house has been burnt after being torn down, at least from how Em put it when they told me about the pictures."|																			|r: "Isn't your mom also a bitch? Why would I care?"|
+|l: "Ash is fine. She's great, actually, as far as I know. Got a new job, new partner who isn't a piece of shit, and a new place. I couldn't have helped her with this without your understanding, even when it was too close for comfort."| 				|r: "Okay, can we not beat around the bush?"|																																		|c: "And did you see the pictures?"|																																								|c: "Yeah, but she'll give you money. Maybe enough for that condo down payment."|
+|r: "I'm…happy to hear that. And I know I went too far when we argued about it. Thanks for sticking by me, babe."|																																			|e: "It was a bunch of pictures. Of Lucien and Ash getting real close, and then of Ash…dead." |																						|r: "Well, I-"|																																														|r: "Say {i}less{/i}."|
+|l: "Wouldn't dare to have it any other way."|																																																				|r: "Like a stroke? An STD? Oh wait, I should be accurate here, and STI? What's the big deal?"|																						|c: "Did. You. See. Them?"|																																											|c: "Okay, cool. I'm gonna bring us back to your party. And Ruby?"|
+|if "choice2" select:|																																																										|e: "Ash was mangled up. Like, a lot. Couldn't really tell what happened but her body was in shambles. The pictures were gross, and the letter said you did it."|					|n: "This feels like more than tough love here. Something's off."|																																	|r: "Yeah Ceci?|
+|r: "Are you okay?"|																																																										|r: "That's insane."|																																								|goto: "thirdchoiceselect"|																																											|c: "Happy birthday. Love ya."|
+|l: "I'm good. Why would I not be?"|																																																						|choiceselect→ "What was the time stamp?" ("choice1.1" and "secondchoiceselect") → "Why would they send that to you?" ("choice1.2" and "secondchoiceselect")|						|→ "I didn't. Did you want me to see them?" ("choice 1.3" and "thirdchoiceselect")→ Why are you so upset? You said…("choice 1.4" and "third choiceselect")|											|r: "Love you back, asshole."|
+|r: "Because we've been through a lot recently? As individuals and as a couple. Besides, I know I was harsh when I first saw you with Ash. I feel bad about it."|																							|if "choice 1.1" select:|																																							|IF "choice 1.3":|																																													|goto: "partybg"|
+|l: "You had every right to feel how you feel. Ash sent me an email recently talking about her life and how well she's done for herself. She even thanked you. That made me feel better."|																	|r: "What was the time stamp for the photos?"| 																																		|r: "I didn't. Did you want me to see them?"|																																						|n: "It's almost midnight. I know exactly what I have to do."|
+|r: "Thanked me? For what?"| 																																																								|e: "I told you I got them this morning."|																																			|c: "If you're gonna assume you're guilty of a crime, I'd assume you want to see the evidence from Em."|																							|goto: "e"|
+|l: "How did she say it again? For giving her a new lease on life."|
+|If "firstchoiceselect" is made:| 																																																							|r: "Yeah I heard that. But are there any indications about when those photos were taken?"|																							|n: "Well I tried to get rid of Em through the process of elimination and still ended up in this shit loop, so I think we're ok."|																	|r: "Oi, Em."|
+|n: "It seems like I've got a lot to chew on, because the math isn't adding up."|																																											|e: "I'm sorry, I was too grossed out by the literal dead body and CSI type pictures to pay attention. And you haven't said anything about them calling you the murderer."|			|r: "They were worried about me. Are you worried about me?"|																																		|e: "Yessssssss?"|
+|n: "I saw that bitch die with my own two eyes, even if I technically wasn't the one that killed her. Is my own fiance lying to me? Again?"|																												|r: "Well, it would run in the family then."|																																		|c: "Of course I am. And I'm worried about Ash, too. After what happened, she—" |																													|r: "You know, I was thinking. My mom didn't actually get fourteen consecutive life sentences. It was thirteen. The fourteenth was tossed on a technicality that you told me about."|
+|n: "Oh this is {i}war{/i}."|																																																								|e: "Don't be gross."| 																																								|r: "What happened with her?"|																																										|soundeffect: popperguncocking|
 																																																															|r: "It's the truth. I swear on my mom's fourteen consecutive life sentences, it might as well.| 																					|c: "Why are you asking now?"|																																										|r: "Happy New Year, bitch. Give me my friend back."|
 |moveto "battle sequence" 																																																									|e: "Did you really kill her?"|																																						|r: "Because this day has somehow all been about her even though it's my celebration. What the hell gives? It's like, is the universe really out to kill me?"|										|goto: "finalboss"|
 "battle sequence" 																																																											|r: "My mom?"|																																										|c: "It worked then"|
@@ -51,63 +52,4 @@ set: scene2|																																																												|r: "eca
 																																																															|jumpto: "secondbattlestart"|
 																																																															|"Sacrifice them for a test kill? You don't have many other options."|
 																																																															|"yes" or "yes"|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
